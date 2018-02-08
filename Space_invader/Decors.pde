@@ -1,3 +1,5 @@
+class Decors {
+  
   // attributs
   //music = she - supersonic
 
@@ -5,3 +7,5 @@
   
 
   // méthodes
+  
+}

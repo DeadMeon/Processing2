@@ -1,6 +1,6 @@
 class Alien {
   // attributs
-  int x, y;
+  float x, y;
   float v, t;
   color c;
   int alienMvt;
@@ -17,25 +17,15 @@ class Alien {
   }
 
   Alien(int x, int y, float v, float t) {
-    this.x = x;
-    this.y = y;
-    this.v = v;
-    this.t = t;
-    this.c = 255;
-    alienMvt = 0;
+    this(x, y, v, t , 255);
   }
 
   Alien() {
-    this.x = x;
-    this.y = y;
-    this.v = v;
-    this.t = t;
-    this.c = c;
     alienMvt = 0;
   }
 
   // méthodes
-  void alien1() {
+  void alien1(float x, float y) {
     fill(c);
     noStroke();
     rectMode(CENTER);

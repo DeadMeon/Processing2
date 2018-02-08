@@ -1,3 +1,4 @@
+class Score {
   // attributs
   
 
@@ -5,3 +6,4 @@
   
 
   // méthodes
+}

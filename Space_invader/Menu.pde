@@ -1,9 +1,7 @@
-
-
 class Menu {
   // attributs
   int x, fenetre, optionB1, optionB2, optionB3, optionB4, optionB5, optionB6, optionB7, optionB8, optionB9, optionB10, optionB11, optionBRetour;
-  int ModeDeSuivi, vDepla, ChoixRobot, xT, yT;
+  int ModeDeSuivi, vDepla, ChoixRobot, xT, yT, tuto;
 
   // constructeur(s)
   Menu() {
@@ -23,6 +21,7 @@ class Menu {
     optionBRetour = 20;
     xT = 130;
     yT = 35;
+    tuto = 0;
 
     //Parametrage 
     ModeDeSuivi = 2; // 0 = sourie; 1 = clavier; 2 = auto
@@ -117,8 +116,13 @@ class Menu {
 
   void clique() {
     if (fenetre == 1) {
-      if (mouseX > width/2-105 && mouseX < width/2+105 && mouseY < height/2+25+35 && mouseY > height/2+25-35 ) {
+      if (mouseX > width/2-105 && mouseX < width/2+105 && mouseY < height/2+25+35 && mouseY > height/2+25-35  && tuto == 0) {
         fenetre = 3;
+        niv == 0;
+        tuto = 1;
+      } else if (mouseX > width/2-105 && mouseX < width/2+105 && mouseY < height/2+25+35 && mouseY > height/2+25-35 ) {
+        fenetre = 3;
+        niv == 1
       } else if (mouseX > width/2-105 && mouseX < width/2+105 && mouseY < height/2+85+35 && mouseY > height/2+85-35 ) {
         fenetre = 2;
       } else if (mouseX > width/2-105 && mouseX < width/2+105 && mouseY < height/2+145+35 && mouseY > height/2+145-35 ) {

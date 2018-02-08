@@ -1,3 +1,4 @@
+class Pause {
   // attributs
   
 
@@ -5,3 +6,4 @@
   
 
   // méthodes
+}
