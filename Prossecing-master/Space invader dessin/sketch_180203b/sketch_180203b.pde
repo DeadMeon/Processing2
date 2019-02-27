@@ -1,0 +1,10 @@
+PFont font;
+size(500, 500);
+fill(0, 30, 45);
+rectMode(CENTER);
+rect(width/2, height/2, width, height);
+fill(230);
+font = createFont("PressStart2P-Regular.ttf", 32);
+textFont(font);
+textAlign(CENTER, CENTER);
+text("Space Invaders", width/2, height/3);
